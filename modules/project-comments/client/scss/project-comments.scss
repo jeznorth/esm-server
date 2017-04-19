@@ -58,6 +58,12 @@ $pcp-comment-icon-color: #ccc;
                 }
             }
         }
+
+        &.actions-col {
+            .btn-group {
+                top: 0.8rem;
+            }
+        }
     }
 }
 
