@@ -94,6 +94,13 @@ angular.module('recent-activity').config(['$stateProvider', function ($stateProv
 					$state.go('p.detail', {projectid: projects[activity.project].code });
 				}
 			};
+
+			// Toggle the pin visuals
+			// prototype development here -- each item should reflect whether or not it has been pinned
+			// Implemented this for quick visuals on how EACH item should display it's pinned or not
+
+			$scope.toggles = [{state: true}, {state: false}]
+
 		},
 		controllerAs: 's'
 	})
